@@ -1,7 +1,7 @@
 # Learning CSharp in parallel 😁
 
 ## Reason
-```text
+```
 I need to understand and get deeply into some totally OOP (Object Oriented Programming) language. Corroborating for a clearer knowledge of paradigms in Programming languages.
 ```
 
