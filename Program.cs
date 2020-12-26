@@ -3,15 +3,23 @@
 namespace OOP {
   class Program {
     static void Main(string[] args) {
-      AnalistaDeTI analistaDeTI = new AnalistaDeTI();
-      Gerente gerente = new Gerente();
-      GerenteDeAgencia gerenteDeAgencia = new GerenteDeAgencia();
-      GerenteDeTI gerenteDeTI = new GerenteDeTI();
 
-      Console.WriteLine("AnalistaDeTI: {0}", analistaDeTI.Salario);
-      Console.WriteLine("Gerente: {0}", gerente.Salario);
-      Console.WriteLine("GerenteDeAgencia: {0}", gerenteDeAgencia.Salario);
-      Console.WriteLine("gerenteDeTI: {0}", gerenteDeTI.Salario);
+      AnalistaDeTI analistaDeTI = new AnalistaDeTI();
+      analistaDeTI.setName("Acaciano");
+      analistaDeTI.setSalario(1000);
+
+      Console.WriteLine($"Nome: {analistaDeTI.Nome}");
+      Console.WriteLine($"Salario: {analistaDeTI.Salario}");
+
+      // AnalistaDeTI analistaDeTI = new AnalistaDeTI();
+      // Gerente gerente = new Gerente();
+      // GerenteDeAgencia gerenteDeAgencia = new GerenteDeAgencia();
+      // GerenteDeTI gerenteDeTI = new GerenteDeTI();
+
+      // Console.WriteLine("AnalistaDeTI: {0}", analistaDeTI.Salario);
+      // Console.WriteLine("Gerente: {0}", gerente.Salario);
+      // Console.WriteLine("GerenteDeAgencia: {0}", gerenteDeAgencia.Salario);
+      // Console.WriteLine("gerenteDeTI: {0}", gerenteDeTI.Salario);
 
 
       // Client client_1 = new Client();
@@ -19,10 +27,10 @@ namespace OOP {
       // client_1.lastname = "Pedro";
       // client_1.age = 18;
 
-      // CreditCard creditCard_1 = new CreditCard(client_1);
+      // CreditCard creditCard_1 = new CreditCard();
       // creditCard_1.Numero = "5341.1231.4213.1122";
       // creditCard_1.DataDeValidade = "12/11/2023";
-      // creditCard_1.Depositar(12.2f);
+      // creditCard_1.Depositar(12f);
       
       // try{
       //   creditCard_1.Pagar(13);
@@ -30,7 +38,6 @@ namespace OOP {
       //   Console.WriteLine("Error: {0}", error.Message);
       // }
 
-      // Console.WriteLine("O nome do cliente é " + client_1.name);
       // Console.WriteLine("O número do cartão é " + creditCard_1.Numero);
       // Console.WriteLine("A data de validade é " + creditCard_1.DataDeValidade);
       // Console.WriteLine("O Saldo atual é " + creditCard_1.ConsultarSaldo()); 
@@ -41,7 +48,7 @@ namespace OOP {
       // client_2.lastname = "Barbosa";
       // client_2.age = 24;
 
-      // DebitCard debitCard = new DebitCard(client_2);
+      // DebitCard debitCard = new DebitCard();
       // debitCard.Numero = "4321.4652.1231.2222";
       // debitCard.DataDeValidade = "12/11/2028";
       // debitCard.Depositar(325.2f);
@@ -50,7 +57,6 @@ namespace OOP {
       // Console.WriteLine(""); 
       // Console.WriteLine("");
 
-      // Console.WriteLine("O nome do cliente é " + client_2.name);
       // Console.WriteLine("O número do cartão é " + debitCard.Numero);
       // Console.WriteLine("A data de validade é " + debitCard.DataDeValidade);
       // Console.WriteLine("O Saldo atual é " + debitCard.ConsultarSaldo()); 
